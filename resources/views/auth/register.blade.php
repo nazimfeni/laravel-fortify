@@ -18,7 +18,7 @@
 
             </div>
             <div>
-                  <label for="name">Password</label>
+                  <label for="password">Password</label>
                   <input type="password" name="password" id="password" value="{{old('password')}}">
                   @error('password')
                   <div>{{$message}}</div>
