@@ -19,5 +19,6 @@
 </div>
             
 <div><button type="submit">Login</button></div>
+<div> <a href="{{route('password.request')}}">Forgetting Password</a></div>
       </form>
 </x-app-layout>
