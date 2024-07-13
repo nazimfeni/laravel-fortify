@@ -15,7 +15,7 @@
    
    <!-- logged in user can access the Dashboard only -->
     @auth
-    <li><a href="">{{auth()->user()->name}}</a></li>
+    <li><a href="{{route('profile.show')}}">{{auth()->user()->name}}</a></li>
     <li><a href="{{route('dashboard')}}">Dashboard</a></li>
     <li><a href="{{route('auth.password')}}">Change Password</a></li>
     <li><a href="{{route('account.delete')}}">Account Delete</a></li>
