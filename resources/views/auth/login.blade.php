@@ -16,7 +16,11 @@
                   @error('password')
                   <div>{{$message}}</div>
                   @enderror
-</div>
+            </div>
+            <div>
+                  <input type="checkbox" name="remember" id="remember">
+                  <label for="remember">Remember Me</label>
+            </div>
             
 <div><button type="submit">Login</button></div>
 <div> <a href="{{route('password.request')}}">Forgetting Password</a></div>
