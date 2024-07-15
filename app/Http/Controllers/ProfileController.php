@@ -28,11 +28,13 @@ class ProfileController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
+            'username' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users,email,' . Auth::id(),
         ]);
 
         $user = Auth::user();
         $user->name = $request->input('name');
+        $user->username = $request->input('username');
         $user->email = $request->input('email');
 
         // If password is also being updated

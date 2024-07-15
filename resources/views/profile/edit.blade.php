@@ -13,6 +13,11 @@
         </div>
 
         <div class="form-group">
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username" value="{{ old('username', auth()->user()->username) }}" required autofocus class="form-control">
+        </div>
+
+        <div class="form-group">
             <label for="email">Email</label>
             <input id="email" type="email" name="email" value="{{ old('email', auth()->user()->email) }}" required class="form-control">
         </div>
